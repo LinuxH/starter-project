@@ -1,0 +1,15 @@
+services:
+  app-debug:
+    build:
+      context: .
+      dockerfile: Dockerfile.debug
+    container_name: demo-project-debug
+    environment:
+      - PORT=3000
+      - NODE_ENV=development
+    ports:
+      - '3000:3000'
+      - '9229:9229' # The default port for debugging
+    volumes:
+      - ./:/app # Mount the whole working directory to the app folder (instead of just the source folder with "./src:/app/src") because to debug (and to debug only), we need the source maps in the dist folder generated when the project is built inside the container to be available locally as well.
+      - /app/node_modules # Mount an anonymous persistent volume to prevent the local one overriding it

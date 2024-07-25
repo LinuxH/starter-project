@@ -1,0 +1,20 @@
+# Use the official Node.js 22 image as the base image
+FROM node:22
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy package.json and package-lock.json (* matches all files with the pattern) to the container (to the working directory we just set before)
+COPY package*.json ./
+
+# Install project dependencies
+RUN npm install
+
+# Copy the rest of the application source code to the container
+# Each of these instructions is a "layer" of the docker container, and if e.g. some code file changes, we don't want to have to run npm install again, that's why we don't copy all at once
+COPY . .
+
+EXPOSE 3000
+
+# The command to run when the container starts. Dev mode listens for changes.
+CMD ["npm", "run", "start:dev"]

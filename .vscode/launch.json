@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Docker: Attach to NestJS",
+            "address": "localhost",
+            "port": 9229,
+            "sourceMaps": true, // Source maps are needed to translate the breakpoint set in Typescript code to the right location in the compiled JavaScript code
+            "restart": true, // Re-attach the debugger upon disconnection (e.g. when files change and the app is hot reloaded)
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "/app",
+            "skipFiles": ["<node_internals>/**"],
+        }
+    ]
+}
