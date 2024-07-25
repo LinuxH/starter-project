@@ -45,15 +45,17 @@ TODO: To be tested: Does debug mode also work when I add a new dependency with n
 TODO: To be tested: Does debug mode also work with multiple modules in the src folder?
 TODO: To be tested: What if I have a monorepo setup with multiple projects (e.g. mobile app, web app, backend app) so I can easily reuse code?
 
-## Test (Not yet adapted)
+## Test
+
+You can run the tests inside of docker as well. Note that the "--rm" flag removes the container again after the run.
 
 ```bash
 # unit tests
-$ npm run test
+$ docker compose run --rm app npm run test
 
 # e2e tests
-$ npm run test:e2e
+$ docker compose run --rm app npm run test:e2e
 
 # test coverage
-$ npm run test:cov
+$ docker compose run --rm app npm run test:cov
 ```

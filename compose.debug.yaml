@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.debug
-    container_name: demo-project-debug
+    container_name: starter-project-debug
     environment:
       - PORT=3000
       - NODE_ENV=development
