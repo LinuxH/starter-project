@@ -1,4 +1,4 @@
-# Demo Project
+# Starter Project
 
 ## Description
 
