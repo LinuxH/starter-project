@@ -59,3 +59,50 @@ $ docker compose run --rm app npm run test:e2e
 # test coverage
 $ docker compose run --rm app npm run test:cov
 ```
+
+## Helpful links, resources, and topics
+
+Looks into Node support for TypeScript
+
+### Authentication
+
+https://www.reddit.com/r/node/comments/10udic4/is_it_okay_to_implement_my_own_authentication_for/
+
+https://fusionauth.io/blog/securing-react-native-with-oauth
+
+### Keycloak
+
+Look into "Keycloakify"
+
+https://rene-wilby.de/en/blog/rn-expo-oauth-authorization-code-flow-pkce-keycloak/
+
+https://www.reddit.com/r/KeyCloak/comments/17b1ws1/how_do_you_handle_users_and_querying_when_using/
+
+https://stackoverflow.com/questions/77652444/how-can-i-use-keycloak-login-inside-a-react-native-app-without-redirecting-the
+
+https://www.trion.de/news/2023/06/27/keycloak-magic-links.html
+
+https://www.reddit.com/r/KeyCloak/comments/1d1gfop/integrating_keycloak_with_reactnative/
+
+### Docker/NestJs
+
+Great tutorial to dockerize NestJs:
+https://www.youtube.com/watch?v=a0B6MdC75z0
+
+https://dev.to/chukwutosin_/step-by-step-guide-setting-up-a-nestjs-application-with-docker-and-postgresql-5hei
+
+https://www.reddit.com/r/docker/comments/tv7sqs/whats_the_point_of_containerizing_a_development/
+
+https://blog.itaywol.com/dockerizing-nestjs-application-and-debugging
+
+https://stackoverflow.com/questions/29181032/add-a-volume-to-docker-but-exclude-a-sub-folder
+
+https://docs.docker.com/language/nodejs/develop/
+
+### Hosting
+
+https://www.reddit.com/r/hetzner/comments/g4unpe/aws_vs_hetzner/
+
+### VSCode
+
+https://code.visualstudio.com/docs/devcontainers/containers#_create-a-devcontainerjson-file
